@@ -1,0 +1,60 @@
+/* hello it me */
+
+/*
+standard blue: #00adee
+standard green: #b2cf36
+light gray: #909294
+dark gray: #424345
+almost black: #1d1d1
+*/
+h3 {
+  color: darkred;
+}
+body > .container {
+	padding: 60px 15px 0;
+}
+.label {
+  text-transform: uppercase;
+}
+.list-group-item {
+  text-shadow: none !important;
+}
+.list-group {
+  list-style-type: none;
+}
+div[data-employer-list="comments"] {
+  display: none;
+}
+.stars i {
+  padding-left: px;
+  padding-right: 10px;
+  color: #ffe500;
+  font-size: 2em;
+}
+/* Sticky footer styles from Bootstrap
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* -------------------------------------------------- */

@@ -1,9 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Project 1 Sample Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- bootstrap 4 css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <!-- Override style -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Shit Talker</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <main class="container">
+    <div class="jumbotron">
+      <h1>rate ya boss</h1>
+      <p>this is a really fun dummy page</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-group" data-employer-list="list">
+          <li>
+            <div class="panel panel-default">
+              <div class="panel-heading" id="1" data-employer-list="item">
+                  <h4>Joe Shmo</h4>
+                <p class="list-group-item-text">
+                  Human Resources Coordinator at RateYaBoss.com
+                </p>
+                <div class="row">
+                  <div class="col-xs-2">
+                <span class="pull-left stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+                  </div>
+                <div class="col-xs-10 col-offset-1">
+                <div class="tags pull-right">
+                  <span class="label label-danger">creep</span>
+                  <span class="label label-warning">made me cry</span>
+                  <span class="label label-info">constantly on vacation</span>
+                  <span class="label label-success">pays well</span>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="panel-body" data-employer-list="comments">
+                <ul class="list-group">
+                  <li class="list-group-item">Smells REALLY BAD!!</li>
+                  <li class="list-group-item">The only reason I keep this job is because he pays me well.</li>
+                  <li class="list-group-item">I had to take off work to take care of my husband, so he convinced my husband I was cheating on him.</li>
+                  <li class="list-group-item">I kind of like Joe...</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="panel panel-default">
+              <div class="panel-heading" id="2" data-employer-list="item">
+                  <h4>Jane Doe</h4>
+                <p class="list-group-item-text">
+                  Associate Director, Business Operations at RateYaBoss.com
+                </p>
+                <div class="row">
+                  <div class="col-xs-2">
+                <span class="pull-left stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+                  </div>
+                <div class="col-xs-10 col-offset-1">
+                <div class="tags pull-right">
+                  <span class="label label-danger">verbally abusive</span>
+                  <span class="label label-warning">made me cry</span>
+                  <span class="label label-info">weird outfits</span>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="panel-body" data-employer-list="comments">
+                <ul class="list-group">
+                  <li class="list-group-item">One time, she came in to the office wearing a lime green pantsuit.</li>
+                  <li class="list-group-item">She fired me because I called her headband ugly, and only gave me one month of severance pay.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">copyright info here</p>
+    </div>
+  </footer>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <!-- bootstrap javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  <!-- custom javascript -->
+  <script src="js/script.js"></script>
 </body>
 </html>
