@@ -53,32 +53,32 @@
     {
       "id": 1,
       "body": "creep",
-      "class": "label-danger"
+      "class": "label label-danger"
     },
     {
       "id": 2,
       "body": "made me cry",
-      "class": "label-warning"
+      "class": "label label-warning"
     },
     {
       "id": 3,
       "body": "constantly on vacation",
-      "class": "label-info"
+      "class": "label label-info"
     },
     {
       "id": 4,
       "body": "pays well",
-      "class": "label-success"
+      "class": "label label-success"
     },
     {
       "id": 5,
       "body": "verbally abusive",
-      "class": "label-danger"
+      "class": "label label-danger"
     },
     {
       "id": 6,
       "body": "weird outfits",
-      "class": "label-info"
+      "class": "label label-info"
     }
   ]
 }
