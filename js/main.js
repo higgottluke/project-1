@@ -21,6 +21,10 @@
   postList.addClickHandler(postList);
 
   //Event Handlers
-  postOrganizer.printPosts(postList.addPost.bind(postList));
+  postOrganizer.printPosts(
+    postList.addPost.bind(postList),
+    postList.addComment.bind(postList),
+    postList.addTag.bind(postList)
+  );
 
 })(window);
