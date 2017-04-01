@@ -36,6 +36,37 @@
     this.$element.append(rowElement.$element);
   };
 
+  PostList.prototype.addComment = function (comment) {
+    console.log('Adding comment ' + comment.id + ' to post ' + comment.postId);
+
+    var $newComment = $('<li></li>', {
+      'class': 'list-group-item',
+      'id': comment.id
+    }).append(comment.body);
+
+    this.$element
+      .find('[id=comments_for_post_' + comment.postId + ']')
+      .closest('[data-employer-list="comments"]')
+      //TODO: We should update this to use a data attribute instead of class
+      .find('[class="list-group"]')
+      .append($newComment);
+  };
+
+  PostList.prototype.addTag = function (postId, tag) {
+    console.log('Adding tag "' + tag.body + '" to post ' + postId);
+
+    var $newTag = $('<span></span>', {
+      'class': tag.class
+    }).append(tag.body);
+
+    this.$element
+      .find('[id=' + postId + ']')
+      .closest('[data-employer-list="item"]')
+      //TODO: We should update this to use a data attribute instead of class
+      .find('[class="tags pull-right"]')
+      .append($newTag);
+  };
+
   //FIXME: This method may not work.  Need to test.
   PostList.prototype.removePost = function (id) {
     this.$element
@@ -87,10 +118,6 @@
       }));
     }
 
-    //*** BEGIN ***//
-    //FIXME: Between this BEGIN and END are the tags.  Need to pull these
-    //from the database
-
     var $div5 = $('<div></div>', {
       'class': 'col-xs-10 col-offset-1'
     });
@@ -99,26 +126,6 @@
       'class': 'tags pull-right'
     });
 
-    var $span2 = $('<span></span>', {
-      'class': 'label label-danger'
-    });
-    $span2.append('creep');
-    $div6.append($span2);
-
-    var $span3 = $('<span></span>', {
-      'class': 'label label-warning'
-    });
-    $span3.append('made me cry');
-    $div6.append($span3);
-
-    var $span4 = $('<span></span>', {
-      'class': 'label label-info'
-    });
-    $span4.append('constantly on vacation');
-    $div6.append($span4);
-
-    //*** END ***//
-
     $div5.append($div6);
     $div3.append($span);
     $div2.append($div3);
@@ -126,10 +133,6 @@
     $div1.append($div2);
     $div.append($div1);
 
-    //*** BEGIN *** //
-
-    //FIXME: the code inbetween this BEGIN and END is for the comments.
-    //The comments should be pulled from the database.
     var $div4 = $('<div></div>', {
       'class': 'panel-body',
       'data-employer-list': 'comments',
@@ -140,18 +143,8 @@
       'class': 'list-group'
     });
 
-    var $li1 = $('<li></li>', {
-      'class': 'list-group-item',
-      'id': post.id
-    });
-    $li1.append('This is a test comment');
-
-    $ul.append($li1);
     $div4.append($ul);
     $div.append($div4);
-
-    //***  END  *** //
-
     $li.append($div);
 
     this.$element = $li;
