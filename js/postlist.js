@@ -36,6 +36,7 @@
     this.$element.append(rowElement.$element);
   };
 
+  //FIXME: This method may not work.  Need to test.
   PostList.prototype.removePost = function (id) {
     this.$element
       .find('[value="' + id + '"]')
@@ -78,25 +79,57 @@
       'class': 'pull-left stars'
     });
 
-    $span.append($('<i></i>', {
-      'class': 'fa fa-star',
-      'aria-hidden': 'true'
-    }));
+    var count;
+    for(count = 0; count < post.stars; count++){
+      $span.append($('<i></i>', {
+        'class': 'fa fa-star',
+        'aria-hidden': 'true'
+      }));
+    }
 
-    $span.append($('<i></i>', {
-      'class': 'fa fa-star',
-      'aria-hidden': 'true'
-    }));
+    //*** BEGIN ***//
+    //FIXME: Between this BEGIN and END are the tags.  Need to pull these
+    //from the database
 
+    var $div5 = $('<div></div>', {
+      'class': 'col-xs-10 col-offset-1'
+    });
+
+    var $div6 = $('<div></div>', {
+      'class': 'tags pull-right'
+    });
+
+    var $span2 = $('<span></span>', {
+      'class': 'label label-danger'
+    });
+    $span2.append('creep');
+    $div6.append($span2);
+
+    var $span3 = $('<span></span>', {
+      'class': 'label label-warning'
+    });
+    $span3.append('made me cry');
+    $div6.append($span3);
+
+    var $span4 = $('<span></span>', {
+      'class': 'label label-info'
+    });
+    $span4.append('constantly on vacation');
+    $div6.append($span4);
+
+    //*** END ***//
+
+    $div5.append($div6);
     $div3.append($span);
     $div2.append($div3);
+    $div2.append($div5);
     $div1.append($div2);
     $div.append($div1);
 
     //*** BEGIN *** //
 
-    //FIXME: the code inbetween this begin and end should be dynamic
-
+    //FIXME: the code inbetween this BEGIN and END is for the comments.
+    //The comments should be pulled from the database.
     var $div4 = $('<div></div>', {
       'class': 'panel-body',
       'data-employer-list': 'comments',
