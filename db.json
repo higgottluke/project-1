@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Joe Shmo",
+      "title": "Human Resources Coordinator at RateYaBoss.com",
+      "author": "anonymous"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "title": "Associate Director, Business Operations at RateYaBoss.com",
+      "author": "anonymous"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Smells REALLY BAD!!",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "The only reason I keep this job is because he pays me well.",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "body": "I had to take off work to take care of my husband, so he convinced my husband I was cheating on him.",
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "body": "I kind of like Joe...",
+      "postId": 1
+    },
+    {
+      "id": 5,
+      "body": "One time, she came in to the office wearing a lime green pantsuit.",
+      "postId": 2
+    },
+    {
+      "id": 6,
+      "body": "She fired me because I called her headband ugly, and only gave me one month of severance pay.",
+      "postId": 2
+    }
+  ]
+}
