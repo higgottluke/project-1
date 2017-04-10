@@ -15,14 +15,6 @@
       "author": "anonymous",
       "stars": 3,
       "tag_ids": [5, 2, 6]
-    },
-    {
-      "id": 3,
-      "name": "Dan the Man",
-      "title": "IT admin, Business Operations at RateYaBoss.com",
-      "author": "anonymous",
-      "stars": 2,
-      "tag_ids": [1, 2, 5]
     }
   ],
   "comments": [
@@ -55,11 +47,6 @@
       "id": 6,
       "body": "She fired me because I called her headband ugly, and only gave me one month of severance pay.",
       "postId": 2
-    },
-    {
-      "id": 7,
-      "body": "HE must know someone to get a job here.",
-      "postId": 3
     }
   ],
   "tags": [
