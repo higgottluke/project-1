@@ -36,7 +36,8 @@
     </div>
   </nav>
   <main>
-    <div class="container-fluid jumbotron">
+      <div class="jumbotron">
+        <div class="container-fluid">
       <h1>Rate Ya Boss</h1>
       <p>A Place to Vent Annonymously of your Everyday Frustrations</p>
       <form>
@@ -46,54 +47,54 @@
             <button type="button" class="btn btn-primary active btn-lg">Search <span class="glyphicon glyphicon-search"></span></button>
           </div>
         </div>
-        <br>
+      </form>
 
-      </form>
-    </div>
-    <div class="addComment">
-      <form class="form-inline" method="post">
-        <div class="form-group">
-          <label for="lastName">Boss First Name:</label>
-          <input type="text" class="form-control" id="firstName">
-        </div>
-        <div class="form-group">
-          <label for="lastName">Boss Last Name:</label>
-          <input type="text" class="form-control" id="lastName">
-        </div>
-        <div class="form-group">
-          <label for="postedBy">Posted By:</label>
-          <input type="text" class="form-control" id="postedby">
-        </div>
-        <div class="form-group">
-          <label for="company">Company Name:</label>
-          <input type="text" class="form-control" id="company">
-        </div>
-        <div class="form-group">
-          <label for="jobtitle">Boss Job Title:</label>
-          <input type="text" class="form-control" id="jobtitle">
-        </div>
-        <div class="form-group">
-          <label for="comment">Comments:</label>
-          <input type="text area" class="form-control" id="comment">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div>
-    <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="list-group" data-employer-list="list">
-        </ul>
+      <div class="addComment">
+        <form class="form-inline new-comment" method="post">
+          <h3 class="text-center">Say something.</h3>
+          <div class="row">
+            <div class="form-group col-lg-2 col-md-4">
+              <label for="lastName">Boss First Name:</label>
+              <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group col-lg-2 col-md-4">
+              <label for="lastName">Boss Last Name:</label>
+              <input type="text" class="form-control" id="lastName">
+            </div>
+            <div class="form-group col-lg-2 col-md-4">
+              <label for="postedBy">Posted By:</label>
+              <input type="text" class="form-control" id="postedby">
+            </div>
+            <div class="form-group col-lg-2 col-md-4">
+              <label for="company">Company Name:</label>
+              <input type="text" class="form-control" id="company">
+            </div>
+            <div class="form-group col-lg-2 col-md-4">
+              <label for="jobtitle">Boss Job Title:</label>
+              <input type="text" class="form-control" id="jobtitle">
+            </div>
+            <div class="form-group col-lg-2 col-md-4">
+              <label for="comment">Comments:</label>
+              <input type="text area" class="form-control" id="comment">
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
       </div>
-    </div>
-    </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="list-group" data-employer-list="list">
+            </ul>
+          </div>
+        </div>
+      </div>
   </main>
 </body>
-<footer class="footer">
-  <div class="container">
-    <p class="text-muted">CPSC 473 Front-End Project1</p>
-  </div>
-</footer>
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
