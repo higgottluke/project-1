@@ -5,6 +5,7 @@
 
   var App = window.App || {};
   var $ = window.jQuery;
+  var FormHandler = App.FormHandler;
 
   function PostList(selector) {
     if (!selector) {
@@ -34,6 +35,9 @@
 
     // Add the new row instance's $element property to the list
     this.$element.append(rowElement.$element);
+
+    var formHandler = new FormHandler('[data-comment="add_comment_' + post.id + '"]');
+    formHandler.addCommentHandler(post.id);
   };
 
   PostList.prototype.addComment = function (comment) {
@@ -143,7 +147,16 @@
       'class': 'list-group'
     });
 
+    var $addComment = $('<button></button>', {
+      'class': 'btn btn-primary',
+      'data-toggle': 'modal',
+      'data-comment-post-id': post.id,
+      'data-comment': 'add_comment_' + post.id
+    });
+    $addComment.append('Add Comment');
+
     $div4.append($ul);
+    $div4.append($addComment);
     $div.append($div4);
     $li.append($div);
 
