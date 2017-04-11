@@ -8,9 +8,6 @@ light gray: #909294
 dark gray: #424345
 almost black: #1d1d1
 */
-h3 {
-  color: darkred;
-}
 body > .container {
 	padding: 60px 15px 0;
 }
@@ -34,12 +31,11 @@ div[data-employer-list="comments"] {
 }
 /* Sticky footer styles from Bootstrap
 -------------------------------------------------- */
-html {
+html, body {
   min-height: 100%;
 }
-body {
+.jumbotron {
   background-image: url('images/mainbg.jpg');
-  background-position: center center;
   background-size: cover;
 }
 
@@ -49,7 +45,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -72,9 +68,26 @@ body {
   color: #FFFFFF;
   text-align: center;
 }
-
+.new-comment {
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #909294;
+  border: 2px solid #b2cf36;
+}
+.new-comment h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 
 img {
-    width: 100%;
-    height: auto;
+	width: 200px;
+	height: 200px;
+}
+.panel-body ul li {
+  color: black !important;
+  text-align: left;
+}
+.panel {
+  text-align: left !important;
 }
