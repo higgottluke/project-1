@@ -29,62 +29,80 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#search">Search</a></li>
-          <li><a href="#about">About</a></li>
-        <li><a href="Rules.html">Rules</a></li>
+          <li><a href="#rate">Rate</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Rules.html">Rules</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
   <main>
-    <div class="jumbotron">
+    <div class="container-fluid jumbotron">
       <h1>Rate Ya Boss</h1>
       <p>A Place to Vent Annonymously of your Everyday Frustrations</p>
       <form>
         <div class="input-group">
-            <input type="email" class="form-control input-lg" placeholder="Search for your Boss' Name or Company and See what others say" required>
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-primary active btn-lg">Search</button>
-              </div>
+          <input type="text" class="form-control input-lg" placeholder="Search for your Boss' Name or Company and See what others say" required>
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-primary active btn-lg">Search <span class="glyphicon glyphicon-search"></span></button>
+          </div>
         </div>
+        <br>
+
       </form>
-
-      <form action="" method="POST">
-        <br/>
-        <p align="left"> <font size="4" color="blue">
-
-        Boss's Name: <br/>
-        <input type = "text" name = "name" required><br/><br/>
-        Company Name: <br/>
-        <input type = "text" company = "company" required><br/><br/>
-        Comment: <br/>
-        <textarea rows = "10" cols = "30" name = "commentContent" required></textarea><br/>
-          <input type = "submit" value = "Post!"><br/>
-        </font></p>
-        </form>
-
     </div>
+    <div class="addComment">
+      <form class="form-inline" method="post">
+        <div class="form-group">
+          <label for="lastName">Boss First Name:</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Boss Last Name:</label>
+          <input type="text" class="form-control" id="lastName">
+        </div>
+        <div class="form-group">
+          <label for="postedBy">Posted By:</label>
+          <input type="text" class="form-control" id="postedby">
+        </div>
+        <div class="form-group">
+          <label for="company">Company Name:</label>
+          <input type="text" class="form-control" id="company">
+        </div>
+        <div class="form-group">
+          <label for="jobtitle">Boss Job Title:</label>
+          <input type="text" class="form-control" id="jobtitle">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comments:</label>
+          <input type="text area" class="form-control" id="comment">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <ul class="list-group" data-employer-list="list">
         </ul>
       </div>
     </div>
+    </div>
   </main>
 </body>
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">copyright info here</p>
-    </div>
-  </footer>
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">CPSC 473 Front-End Project1</p>
+  </div>
+</footer>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <!-- bootstrap javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
-  <script src="js/datastore.js" charset="utf-8"></script>
-  <script src="js/remotedatastore.js" charset="utf-8"></script>
-  <script src="js/postorganizer.js" charset="utf-8"></script>
-  <script src="js/postlist.js" charset="utf-8"></script>
-  <script src="js/main.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<!-- bootstrap javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+<script src="js/datastore.js" charset="utf-8"></script>
+<script src="js/remotedatastore.js" charset="utf-8"></script>
+<script src="js/postorganizer.js" charset="utf-8"></script>
+<script src="js/postlist.js" charset="utf-8"></script>
+<script src="js/main.js"></script>
 </html>
