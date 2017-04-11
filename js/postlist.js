@@ -147,6 +147,13 @@
       'class': 'list-group'
     });
 
+    var $textArea = $('<textarea></textarea>', {
+      'id': 'comment_for_post_' + post.id,
+      'rows': '1',
+      'cols': '95%',
+      'placeholder': 'Write your comment here'
+    });
+
     var $addComment = $('<button></button>', {
       'class': 'btn btn-primary',
       'data-toggle': 'modal',
@@ -156,6 +163,7 @@
     $addComment.append('Add Comment');
 
     $div4.append($ul);
+    $div4.append($textArea);
     $div4.append($addComment);
     $div.append($div4);
     $li.append($div);
